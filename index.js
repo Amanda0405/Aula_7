@@ -29,12 +29,8 @@ app.post("/new", (req, res) => {
     res.redirect("/")
 });
 
-app.get("/detalhes/:id", (req, res) => {
-    const id = req.params.id;
-    const pokemon = pokedex[id];
-    res.render("detalhes", {
-      pokemon,
-    });
+app.get("/detalhes, (req, res) => {
+   res.render("detalhes")
   });
 
 
