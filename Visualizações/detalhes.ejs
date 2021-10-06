@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<header>
+  
+  <a type ="submit" href="/">Início</a>
+  <a type ="submit" href="/cadastro" >Cadastro</a>
+
+</header>
+
+<body>
+
+    <h1 id= text>Detalhes do Pokémon</h1>
+    
+    <section>
+      <div>
+      <ul>
+        <% pokedex.forEach(item => { %>
+        <li><img src=<%= item.Imagem %>><br>
+       Número: <%= item.Numero %>Descrição: <%= item.Descrição %>
+       Altura: <%= item.Altura %> Peso: <%=item.Peso %> Categoria: <%= item.Categoria %>
+       Habilidade: <%= item.Habilidade %>
+        </li>
+        <% }) %>
+      </ul>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
